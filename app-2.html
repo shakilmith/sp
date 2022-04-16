@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>7 short posts.</title>
+  
+  <!-- for development purposes-->
+<script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+
+
+</head>
+
+
+<body>
+<div id="root" style="line-height:
+1.5em; font-size: 18px">
+  
+</div>
+
+
+
+<script type="text/babel">
+  
+  const rootElement = document.getElementById('root');
+  
+  
+  function Heading (){
+    
+    const style={
+      color: "white",
+      backgroundColor: "blue",
+      margin: '-7px',
+      padding: '10px'
+      
+    }
+    return (
+      <div style={style}>
+      <h3 >Simplicity has no 
+        Explanation
+      </h3>
+      </div>
+      )
+  }
+  
+  
+  
+  
+  
+  function App(){
+    
+    
+    
+    
+    
+    return (
+      <>
+      <Heading />
+      <Post1 heading="First Post."/>
+      <br/>
+      <Post1 heading="Second Post."/>
+      <br/>
+      <Post1 heading="Third Post."/>
+      <br/>
+      <Post1 heading="Fourth Post" />
+      <br/>
+      <Post1 heading="Fifth Post." />
+      
+      
+      
+      
+      
+      
+      </>
+      
+      )
+  }
+  
+  function Post1(props){
+   
+    const style={
+      color: 'white',
+      backgroundColor: 'black',
+      margin: '-5px',
+      padding: '10px'
+    }
+    
+    const heading={
+      color: 'red',
+      textAlign: 'center'
+    }
+    
+    
+    return (
+      <div style={style}>
+      <h2 style={heading}>
+      {props.heading}
+      </h2>
+      
+      <br/>
+     
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis elementum malesuada. Ut rhoncus auctor sapien eget eleifend. Vestibulum viverra turpis ac lacus pellentesque, vitae luctus ante blandit. Vestibulum ac imperdiet augue. Integer consequat aliquet massa eget tincidunt. Quisque varius quam in congue feugiat. Duis velit magna, dictum ut massa nec, dapibus ultrices lectus. Sed egestas libero porta tempor posuere. Vivamus suscipit sagittis orci, nec lacinia odio lobortis sed. Maecenas pharetra convallis ligula. Phasellus finibus orci et mauris mattis lacinia. Praesent ut diam ut erat vulputate gravida. Mauris dapibus quis lorem et faucibus. Proin eget metus quis augue tincidunt aliquet ac faucibus eros.
+      </p>
+      
+      </div>
+      )
+  }
+  
+  
+  ReactDOM.render(<App />, rootElement)
+  
+</script>
+
+
+
+
+<body>
+
+</body>
+
+</html>
